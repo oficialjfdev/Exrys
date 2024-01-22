@@ -1,0 +1,29 @@
+{
+  "name": "adp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "NODE_OPTIONS='--openssl-legacy-provider' next dev -p 5000",
+    "start-joystick": "node joystick.js",
+    "build": "webpack",
+	"start": "set \"NODE_OPTIONS=--openssl-legacy-provider\" && npm run build && webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "five": "^0.8.0",
+    "johnny": "^2.0.0",
+    "johnny-five": "^1.1.0",
+    "phaser": "^3.17.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "socketio": "^1.0.0",
+    "webpack": "^4.31.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
